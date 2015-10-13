@@ -1,17 +1,7 @@
 Rails.application.routes.draw do
-  get 'categories/index'
-
-  get 'categories/new'
-
-  get 'categories/edit'
-
-  get 'categories/destroy'
-
-  get 'categories/show'
-
-  get 'categories/update'
-
   resources :ratings
+
+  resources :categories
 
   devise_for :users
   devise_scope :user do
