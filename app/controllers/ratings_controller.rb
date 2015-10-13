@@ -16,4 +16,8 @@ class RatingsController < ApplicationController
 
   def update
   end
+
+  def dashboard
+    
+  end
 end
