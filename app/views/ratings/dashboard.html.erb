@@ -1,1 +1,4 @@
-Welcome admin
+<% @users.each do |i| %>
+	<%= i.name %>
+	<%= i.email %> <br>
+<%end%>
