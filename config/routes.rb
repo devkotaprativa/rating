@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
-  get 'ratings/index'
-
-  get 'ratings/new'
-
-  get 'ratings/show'
-
-  get 'ratings/edit'
-
-  get 'ratings/destroy'
-
-  get 'ratings/update'
+  resources :ratings
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
