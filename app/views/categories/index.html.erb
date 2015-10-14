@@ -1,4 +1,6 @@
 <% @categories.each do |i| %>
-	<h5><%= i.name %> <%= link_to "edit", edit_category_path(i)%></h5> <br>
+	<h5><%= i.name %> <%= link_to "edit", edit_category_path(i)%>
+			<%= link_to "delete",category_path(i), method: :delete, data: {confirm: "Really delete the category?"} %>
+	</h5> <br>
 <% end %>
 <%= link_to "Add Category",new_category_path %>

@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
   resources :ratings
 
   resources :categories
 
-  devise_for :users
+  
   devise_scope :user do
   authenticated :user do
     root :to => 'ratings#dashboard'

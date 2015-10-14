@@ -1,7 +1,4 @@
-// Place all the styles related to the ratings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-#sidebar-wrapper{
+.sidebar-wrapper{
 	z-index: 1;
 	position: absolute;
 	width: 25%;
@@ -12,10 +9,9 @@
 	opacity: 0.9; 
 }
 
-#page-content-wrapper{
+.page-content-wrapper{
 	width: 75%;
 	position: absolute;
 	padding: 15px
 	border: 5px solid green;
 }
-
