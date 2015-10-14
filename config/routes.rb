@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'students/index'
+
+  get 'students/new'
+
+  get 'students/edit'
+
+  get 'students/destroy'
+
+  get 'students/update'
+
+  get 'students/show'
+
   devise_for :users
   
   resources :ratings
